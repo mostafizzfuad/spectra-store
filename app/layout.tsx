@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/assets/styles/globals.css";
+import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constants";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Spectra Store",
-  description: "A mordern e-commerce platform built with Next.js",
+	title: {
+		template: `%s | Spectra Store`,
+		default: APP_NAME,
+	},
+	description: APP_DESCRIPTION,
+	metadataBase: new URL(SERVER_URL),
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${inter.className} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={`${inter.className} antialiased`}>{children}</body>
+		</html>
+	);
 }
