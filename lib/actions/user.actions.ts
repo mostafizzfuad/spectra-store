@@ -12,7 +12,7 @@ import { isRedirectError } from "next/dist/client/components/redirect-error";
 import { hashSync } from "bcrypt-ts-edge";
 // import { hash } from "../encrypt";
 import { prisma } from "@/db/prisma";
-// import { formatError } from "../utils";
+import { formatError } from "../utils";
 // import { ShippingAddress } from "@/types";
 // import { z } from "zod";
 // import { PAGE_SIZE } from "../constants";
@@ -79,6 +79,6 @@ export async function signUpUser(prevState: unknown, formData: FormData) {
 		if (isRedirectError(error)) {
 			throw error;
 		}
-		return { success: false, message: "User was not registered" };
+		return { success: false, message: formatError(error) };
 	}
 }
