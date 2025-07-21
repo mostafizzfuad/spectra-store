@@ -15,3 +15,8 @@
 -   Sorting, filtering & pagination
 -   Dark/Light mode
 -   Much more
+
+## 🔐 Demo Credentials
+- **Email:** `admin@example.com`  
+- **Password:** `123456`
+👉 Alternatively, you can register as a new user.
