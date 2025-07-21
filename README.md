@@ -1,5 +1,9 @@
-## Features
+## 🔐 Demo Credentials
+- *Email:* `admin@example.com`  
+- *Password:* `123456`
+👉 Alternatively, you can register as a new user.
 
+## Features
 -   Next Auth authentication
 -   Admin area with stats & chart using Recharts
 -   Order, product and user management
@@ -16,7 +20,3 @@
 -   Dark/Light mode
 -   Much more
 
-## 🔐 Demo Credentials
-- **Email:** `admin@example.com`  
-- **Password:** `123456`
-👉 Alternatively, you can register as a new user.
