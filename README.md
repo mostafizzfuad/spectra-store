@@ -1,9 +1,9 @@
 ## 🔐 Demo Credentials
-- *Email:* `admin@example.com`  
-- *Password:* `123456`
-👉 Alternatively, you can register as a new user.
+- **Email:** `admin@example.com`  
+- **Password:** `123456`
+📌 Alternatively, you can register as a new user.
 
-## Features
+## ✨ Features
 -   Next Auth authentication
 -   Admin area with stats & chart using Recharts
 -   Order, product and user management
