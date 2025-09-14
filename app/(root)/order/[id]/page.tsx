@@ -21,7 +21,7 @@ const OrderDetailsPage = async (props: {
 
 	const session = await auth();
 
-	let client_secret = null;
+	const client_secret = null;
 
 	return (
 		<OrderDetailsTable
